@@ -17,7 +17,7 @@ void fullTextures(vector<sf::Texture> &vet){
 
 int main(int argc, const char *argv[]){
 
-    sf::RenderWindow window(sf::VideoMode(TAM_JANELA, TAM_JANELA), "SinkShip - Jogador da vez: 1",
+    sf::RenderWindow window(sf::VideoMode(TAM_JANELA, TAM_JANELA), "SinkShip - Jogador da vez: Humano",
                             sf::Style::Close | sf::Style::Titlebar);
     vector<sf::Texture> texturas1, texturas2;
     srand(time(NULL));
@@ -50,7 +50,7 @@ int main(int argc, const char *argv[]){
             }
         } else {
             stringstream title;
-            title << "SinkShip - Jogador da vez: " << ((gc -> getPlayer() == 1) ? "1": "Computador");
+            title << "SinkShip - Jogador da vez: " << ((gc -> getPlayer() == 1) ? "Humano": "Computador");
             window.setTitle(title.str());
             sf::Event evnt;
             bool f = false;

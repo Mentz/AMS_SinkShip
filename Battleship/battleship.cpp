@@ -50,7 +50,7 @@ int main(int argc, const char *argv[]){
             }
         } else {
             stringstream title;
-            title << "SingShip - Jogador da vez: " << ((gc -> getPlayer() == 1) ? "1": "Computador");
+            title << "SinkShip - Jogador da vez: " << ((gc -> getPlayer() == 1) ? "1": "Computador");
             window.setTitle(title.str());
             sf::Event evnt;
             bool f = false;
